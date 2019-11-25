@@ -1,1 +1,37 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buzz-Fizz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Raleway+Web&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h1>Hello to the FizzBuzz</h1>
+        <div class="field">
+            <label for="min">Starting number:</label>
+            <input type="text" id="min" name="min" required min="1" max="99" value="1">
+        </div>
+        <div class="field">
+            <label for="max">Ending number:</label>
+            <input type="text" id="max" name="max" required min="2" max="100" value="100">
+        </div>
+        <div class="field">
+                <label for="fizz">Fizz value:</label>
+                <input type="text" id="fizz" name="fizz" required min="1" max="99" value="3">
+            </div>
+        <div class="field">
+            <label for="buzz">Buzz value:</label>
+            <input type="text" id="buzz" name="buzz" required min="2" max="100" value="5">
+        </div>
+        <button type="button" class="main" id="generate">Geverate Divs</button>
+        <button type="button" id="clear">Clear All</button>
+    </nav>
+    <hr>
+    <main id="container"></main>
+</body>
+</html>
