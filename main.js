@@ -1,25 +1,13 @@
 function main () {
     fizzBuzz();
-    console.log("this is after the default elements are genetared");
-    console.log("min value: " + min.value);
-    console.log("max value: " + max.value);
-    console.log("fizz value: " + fizz.value);
-    console.log("buzz value: " + buzz.value);
-    
-    addHandlers ();
-    console.log("Added event handlers");    
+    addHandlers ();   
 }
 
 function addHandlers () {
-
     document.querySelector("#generate").onclick = () => {
-        console.log("we clicked on the generate button");
         clearDivs();
-        console.log("it cleared the previous divs");
         fizzBuzz(); 
-        console.log("it generated these divs");
     }
-
     document.querySelector("#clear").onclick = () => {
         console.log("we clicked on the clear all button");
         clearDivs();
@@ -40,10 +28,6 @@ function resetValues () {
     fizz.value = 3; 
     buzz.value = 5; 
     console.log("just reset the values to default");
-    console.log("min value: " + min.value);
-    console.log("max value: " + max.value);
-    console.log("fizz value: " + fizz.value);
-    console.log("buzz value: " + buzz.value);
 }
 
 function addElemObj (parent, obj) {
@@ -56,7 +40,6 @@ function addElemObj (parent, obj) {
 }
 
 function fizzBuzz () {
-    console.log("fizbuzz started");
     const container = document.querySelector('#container');
     const min = document.querySelector('#min');
     const max = document.querySelector('#max');
@@ -82,11 +65,9 @@ function fizzBuzz () {
             boxDiv.innerText = "Buzz";  
         }
     }
-    console.log("min value: " + min.value);
-    console.log("max value: " + max.value);
+    console.log("fizbuzz finished");
     console.log("fizz value: " + fizz.value);
     console.log("buzz value: " + buzz.value);
-    console.log("fizbuzz finished");
 }
 
 main ();

@@ -25,19 +25,19 @@ input {
 }
 
 button {
-  border-radius: 50px;
-  border-color: #494949;
+  border: 1.5px solid #494949;
   text-transform: uppercase;
   font-weight: 600;
   background: #ffffff;
   padding: 10px 23px;
   margin: 17px 24px 0 0;
   cursor: pointer;
+  box-shadow: 7px 8px 16px 1px rgba(143,143,143,0.45);
 }
 
 button:hover {
   transform: scale(1.03);
-  border-radius: 0;
+  box-shadow: none; 
 }
 
 #container {
