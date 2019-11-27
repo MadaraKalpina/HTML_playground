@@ -63,7 +63,7 @@ function fizzBuzz () {
     const fizz = document.querySelector('#fizz');
     const buzz = document.querySelector('#buzz');
 
-    for (let i = min.value; i <= max.value; i++) {
+    for (let i = parseFloat(min.value); i <= parseFloat(max.value); i++) {
         const boxDiv = addElemObj(container, {id: "box" + i, tag: 'div', innerText: "box " + i, classList: "box"});
         if (i % fizz.value == 0 && i % buzz.value == 0) {
             boxDiv.classList.add("both"); // dalās ar abiem

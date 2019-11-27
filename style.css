@@ -64,8 +64,8 @@ button:hover {
 }
 
 .both {
-  background-color: black;
   color: white; 
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 .none {
@@ -73,11 +73,11 @@ button:hover {
 }
 
 .fizz {
-  border: 3px dotted !important;
+  background: linear-gradient(0deg, rgba(34,193,195,0.01) 0%, rgba(34,193,195,1) 100%);
   font-weight: 600;
 }
 
 .buzz {
-  border: 3px double !important;
+  background: linear-gradient(0deg, rgba(253,187,45,0.01) 0%, rgba(253,187,45,1) 100%);;
   font-weight: 600;
 }
